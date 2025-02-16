@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gowtham V Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Gowtham V Portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(1000165566-removebg-preview.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading"></span><br><br><br><br><br><br>
+						  <span class="subheading">Hello...</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Gowtham V</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Leadership Quality ',
+						'Frontend Developer ',
+						'Digital Marketing  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Technology Student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/gowtham-v-191b44318" class="btn btn-primary py-3 px-3">LinkedIn</a>
+							<a href="https://github.com/Gowthamdvr?tab=repositories" class="btn btn-primary py-3 px-3">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="1000165566-removebg-preview (1).png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Gowtham V</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Technology Role</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 Months Intership</span></p>
+										<p><span class="title-s">Address: </span> <span>Tamil Nadu , India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>HTML</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CSS</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>GitHub</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									 
+									<span>MS-Word / Excel /  </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>JS</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p><b>I am a dedicated Computer Science student passionate about leveraging technology to
+									solve complex problems and drive innovation. </b>With a strong foundation in programming, web
+									development, and digital marketing, I am eager to apply my knowledge to real-world
+									challenges. <br>My commitment to continuous learning has led me to complete certifications in
+									UI/UX design, project management, and cloud operations, further strengthening my technical
+									and analytical skills. I thrive in dynamic environments, collaborating with teams to deliver
+									impactful solutions while staying updated with the latest industry trends.<br> My goal is to
+									contribute to transformative projects and grow as a professional in the technology and digital
+									solutions domain.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Computer Science  & Technology</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Frontend Developer &amp; Technology Role &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science in Computer Science</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Tamil , Telugu</span></li>
+									<li class="d-flex"><span> Tools:</span> <span>Microsoft Power , Microsoft Word  &amp; ChatGBT , Github</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud , Mural , Google Cloud Sheets / Form / Document /  Create new ideas, Photoshop, Excel, Git, Team Work , Google Analytics &amp; SEO Marketing</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="21">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://github.com/Gowthamdvr?tab=repositories" class="btn btn-primary py-3 px-3">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+			<p><a href="https://drive.google.com/file/d/1bW8V6kzkVfTW3d3GqO7hJ09O9ttldExa/view?usp=drivesdk" class="btn btn-primary py-3 px-3">Click TO View Resume</a></p>
+          </div>
+        </div>
+		<section class="ftco-section" id="project-section">
+			<div class="container">
+			  <div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				  <h1 class="big big-2">Projects</h1>
+				  <h2 class="mb-4">Projects</h2>
+				  <p>Frontend Website Using Language Html , Css , Javascripe </p>
+				</div>
+			  </div>
+			  <div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					<a href="https://github.com/Gowthamdvr?tab=repositories" class="block-20 zoom-effect" style="background-image: url('lib/font-awesome/fonts/Screenshot 2024-12-02 193908.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+	  
+					  <h3 class="heading" style="text-align: center;"><a href="https://github.com/Gowthamdvr?tab=repositories"></a>College Website Using Language Html , Css , Javascripe</h3>
+					<p>My commitment to continuous learning has led me to complete certifications in
+						UI/UX design, project management, and cloud operations, further strengthening my technical
+						and analytical skills</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					<a href="https://github.com/Gowthamdvr?tab=repositories" class="block-20 zoom-effect" style="background-image: url('lib/font-awesome/fonts/Screenshot 2024-12-02 194012.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+	  
+					  <h3 class="heading" style="text-align: center;"><a href="https://github.com/Gowthamdvr?tab=repositories">Portfolio Using Language Html , Css , Javascripe</a></h3>
+					  <p>My commitment to continuous learning has led me to complete certifications in
+						UI/UX design, project management, and cloud operations, further strengthening my technical
+						and analytical skills.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+					<a href="https://github.com/Gowthamdvr?tab=repositories" class="block-20 zoom-effect" style="background-image: url('lib/font-awesome/fonts/Screenshot 2024-12-02 194107.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+	  
+					  <h3 class="heading" style="text-align: center;"><a href="https://github.com/Gowthamdvr?tab=repositories">Kowsalya Cake Shop Website Using Language Html , Css , Javascripe</a></h3>
+					  <p>My commitment to continuous learning has led me to complete certifications in
+						UI/UX design, project management, and cloud operations, further strengthening my technical
+						and analytical skills.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		  <br>
+			  <!-- added justify-content-center to center align the last two projects -->
+			  <div class="row d-flex justify-content-center">  
+				  <div class="col-md-4 d-flex ftco-animate">
+					  <div class="blog-entry justify-content-end">
+					  <a href="https://github.com/Gowthamdvr?tab=repositories" class="block-20 zoom-effect" style="background-image: url('lib/font-awesome/fonts/Screenshot 2024-12-02 194141.png');">
+					  </a>
+					  <div class="text mt-3 float-right d-block">
+		
+						<h3 class="heading" style="text-align: center;"><a href="https://github.com/Gowthamdvr?tab=repositories">Digital Clock Using Language Html , Css , Javascripe</a></h3>
+						<p>My commitment to continuous learning has led me to complete certifications in
+							UI/UX design, project management, and cloud operations, further strengthening my technical
+							and analytical skills</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-4 d-flex ftco-animate">
+					  <div class="blog-entry justify-content-end">
+					  <a href="https://github.com/Gowthamdvr?tab=repositories" class="block-20 zoom-effect" style="background-image: url('lib/font-awesome/fonts/Screenshot 2024-12-02 193808.png');">
+					  </a>
+					  <div class="text mt-3 float-right d-block">
+		
+						<h3 class="heading" style="text-align: center;"><a href="https://github.com/Gowthamdvr?tab=repositories">Calculator Using Language Html , Css , Javascripe</a></h3>
+						<p>My commitment to continuous learning has led me to complete certifications in
+							UI/UX design, project management, and cloud operations, further strengthening my technical
+							and analytical skills</p>
+					  </div>
+					</div>
+				  </div>
+			   </div>
+			</div>
+		  </section>
+	  
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 - 2025</span>
+						<h2>Digital Marketing Intern</h2>
+						<span class="position">HostSpacio</span>
+						<p class="mt-4">Digital Marketing/Frontend Developer Intern at Hostipacio Digital Solution
+							As a Digital Marketing and Frontend Developer intern, I:
+							<ul>
+								<li>Assist in designing and developing responsive and user-friendly websites using modern
+							frameworks and tools.
+							Collaborate with designers and developers to optimize UI/UX for seamless navigation and
+							accessibility.</li>
+								<li>Implement and monitor SEO strategies to improve website visibility and search engine
+							rankings.
+							Support end-to-end digital marketing campaigns, including content creation, email
+							marketing, and social media management.
+							Analyze performance metrics using tools like Google Analytics to assess campaign
+							effectiveness and identify areas for improvement.</li>
+							<li>Conduct A/B testing to optimize website elements and enhance conversion rates.
+							Create and maintain landing pages tailored to marketing goals and promotional needs.
+							Research emerging technologies and trends in digital marketing and frontend development
+							to bring innovative ideas to projects.</li>
+
+							<li>Provide insights on consumer behavior and competitor activities to refine strategies.
+							Assist in troubleshooting and resolving technical issues to ensure smooth website<br><br><p><a href="https://drive.google.com/file/d/1a12FLIlWAHeggOQSr8BLaluYQ7p5RY3V/view?usp=drivesdk" class="btn btn-primary py-3 px-3">View Certificate</a></p> </li>
+						</ul>
+								
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+		
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023 - 2026</span>
+    					<h2>Bachelor of Science in Computer Science</h2>
+    					<span class="position">Nallamuthu Gounder Mahalingam College </span>
+    					<p class="mt-4">Grade: First class </p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2010 - 2023</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">R.V.S Martriculation Hr. Sec . School </span>
+    					<p class="mt-4">Grade: First Class </p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    			
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Certificate</h1>
+            <h2 class="mb-4">Certificate</h2>
+            <p>My commitment to continuous learning has led me to complete certifications</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/certificate (3).jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for National Unity Quiz 2024</a></h3>
+                <p>My commitment to continuous learning has led me to complete certifications in
+					UI/UX design, project management, and cloud operations, further strengthening my technical
+					and analytical skills</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/certificate (7).jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for Naturopathy Quiz 2024</a></h3>
+                <p>My commitment to continuous learning has led me to complete certifications in
+					UI/UX design, project management, and cloud operations, further strengthening my technical
+					and analytical skills.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/CertificateOfCompletion_Microsoft 365 Copilot The Art of Prompt Writing_1.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq"> Certificate for LinkedIn learning</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/CertificateOfCompletion_Project Management Foundations Requirements (1)_1.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for linkedin learning</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/Coursera 5AHADKXY3KAT_1.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for process Management</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/Coursera NVU782565KJX_1.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for Risk Management</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/FEtCsS5lo2-cbe6207abe055240.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for HostSpacio Workplace Guidelines</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/Gowtham V-1(153713017752930).jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for Android Study Jams</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/Simplilearn Certificate_1(2).jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for Javascripe Course</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/Simplilearn Certificate_1(3).jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for  Gemini in Google Drive</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/XSzfsP017t-07a86f937bd66e75.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for UI/UX Course</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq" class="block-20 zoom-effect" style="background-image: url('images/Screenshot_20230928-063612_Image to PDF Converter.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading" style="text-align: center;"><a href="https://drive.google.com/drive/folders/1BY3pJKbCTwXUdvmjM92MBIEM7JQqU4Nq">Certificate for World Health Day Quiz 2023</a></h3>
+			  <p>My commitment to continuous learning has led me to complete certifications in
+				UI/UX design, project management, and cloud operations, further strengthening my technical
+				and analytical skills.</p>
+			</div>
+		  </div>
+		</div>
+		
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="56">0</strong>
+                <span>Certificate</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="21">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="34">0</strong>
+                <span>Course</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="75">0</strong>
+                <span>Skills & Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems  </h4>
+						<br>
+						<p><a href="https://github.com/Gowthamdvr?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Tamil Nadu , India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p>+91 9342576693</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p>gowthamdvr@gmail.com</p>
+	          </div>
+          </div> 
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+				  <p><a href="https://drive.google.com/file/d/1bW8V6kzkVfTW3d3GqO7hJ09O9ttldExa/view?usp=drivesdk" class="btn btn-primary py-3 px-3">View</a></p>
+				  
+	            
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question ?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScTqDX9i4n0C-t2Uh7K2cImJ1OMSLvWjAQuoU
+						smbNNT5wimjg/viewform?usp=sharing" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@2kboysfeelings406"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/gowtham-v-191b44318"><span class="icon-linkedin"></span></a></li>  
+
+				      <li class="ftco-animate"><a href="https://www.instagram.com/gowtham_xofficial/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<p> Thanks for Visit My page  </p>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
